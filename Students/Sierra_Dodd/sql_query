@@ -1,0 +1,8 @@
+SELECT TOP 5
+   ra, dec, z, bestObjID
+FROM SpecObj
+WHERE
+   class = 'qso'
+   AND ra < 182 AND ra > 178
+   AND dec < 62 AND dec > 58
+ORDER BY 'z' DESC
